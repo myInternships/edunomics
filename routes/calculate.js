@@ -4,7 +4,7 @@ var Calc = require('../model/calc');
 const Database = require('../db/database');
 
 /* GET home page. */
-router.get('/', async function(req, res, next) {
+router.post('/', async function(req, res, next) {
 
   var height = req.body.height
   var coeff = req.body.coeff

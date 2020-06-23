@@ -9,12 +9,12 @@ const CustomPlot = ({ x, y }) => {
                     x: x,
                     y: y,
                     type: 'line',
-                    mode: 'lines+markers',
-                    marker: { color: 'red' },
+                    // mode: 'lines+markers',
+                    marker: { color: 'blue' },
                 }
             ]}
 
-            layout={{ width: 320, height: 240, title: 'Plot' }}
+            layout={{ width: 500, height: 500, title: 'Plot' }}
         />
     )
 }
