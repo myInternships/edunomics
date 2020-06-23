@@ -1,5 +1,3 @@
-
-
 /**
  * INPUT: height, coeff. of restitution
  * OUTPUT: No. Of Bounces, Graph Data
@@ -14,9 +12,13 @@ class Calc {
     output() {
         return {
             "bounces": 0,
-            "graph": []
+            "graph": calculateGraph(this.height, this.coeff)
         }
     }
+}
+
+function generateGraph() {
+
 }
 
 module.exports = Calc
