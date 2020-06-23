@@ -1,5 +1,8 @@
-
-
+/**
+ * height, coeff => { bounces, { height, time } }
+ * @param {height} h0 
+ * @param {coefficient of restitution} rho 
+ */
 function calculateGraph(h0, rho) {
     // var h0 = 5         // m / s
     var v = 0          // m / s, current velocity
@@ -50,8 +53,10 @@ function calculateGraph(h0, rho) {
 
     return {
         "bounces": bounces,
-        "height": H,
-        "time": T
+        "graph": {
+            "height": H,
+            "time": T
+        }
     }
 }
 

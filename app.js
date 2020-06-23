@@ -5,6 +5,8 @@ var logger = require('morgan');
 
 var calculate = require('./routes/calculate');
 var history = require('./routes/history');
+var clear = require('./routes/clear');
+
 
 var app = express();
 
@@ -15,6 +17,8 @@ app.use(cookieParser());
 
 app.use('/calculate', calculate);
 app.use('/history', history);
+app.use('/clear', clear);
+
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
