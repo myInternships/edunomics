@@ -7,7 +7,6 @@ Given **initial height** and **coefficient of restitution**:
 
 ## Backend Api Links
 
-
 ### POST [/calculate](https://taskphase.herokuapp.com/calculate)
 
 body should be of the type:
@@ -20,3 +19,7 @@ body should be of the type:
 ### GET [/history](https://taskphase.herokuapp.com/history)
 
 Will return the records of previous answers
+
+## Frontend
+
+![](./img/frontend.png)
