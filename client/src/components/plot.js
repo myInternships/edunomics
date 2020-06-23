@@ -14,7 +14,7 @@ const CustomPlot = ({ x, y }) => {
                 }
             ]}
 
-            layout={{ width: 500, height: 500, title: 'Plot' }}
+            layout={{ width: "500px", height: "500px", title: 'Plot' }}
         />
     )
 }
