@@ -19,7 +19,7 @@ router.get('/', async function(req, res, next) {
     await (await (await new Database().load()).add(calc)).save()
   }
 
-  res.send()
+  res.send("done")
 });
 
 module.exports = router;
