@@ -11,13 +11,15 @@ class Database {
         this.path = path.join(__dirname, 'db.json')
     }
 
-    static getInstance() {
-        return new Database()
+    static async initiate() {
+        var db = new Database()
+        db.file = []
+        await db.save()
     }
 
     // save/load state
-    async save(content) {
-        await writeFile(this.path, content)
+    async save() {
+        await writeFile(this.path, JSON.stringify(this.file))
         return this
     }
 
@@ -27,10 +29,10 @@ class Database {
     }
 
     // modify the database
-    async add() {
-
+    async add(content) {
+        this.file.push(content)
+        return this
     }
-
 }
 
 module.exports = Database
